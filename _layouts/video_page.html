@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="page-content">
+        <div class="page-head">
+            <h1 class="page-title">{{ page.title | escape }}</h1>
+        </div>
+
+        <div>
+            <div id="youtube" class="spidochetube"></div>
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="{{ site.baseurl }}/css/minimal.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/js/jquery.spidochetube.js" ></script>
+
+<script>
+  jQuery(function($){
+      $('#youtube').spidochetube({
+          key         : 'AIzaSyCAxpkUISCbEec5qcoz63O3nb1RNdDykSk',
+          id          : 'PLHr8-_Sh6kcjXX5wOU2T9tans_Q9GvZjE', // add the youtube playlist id of your choice
+          max_results     : 20,
+          paging          : 'loadmore',
+          scroll_duration : 500
+      });
+  })
+  </script>
+  

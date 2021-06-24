@@ -15,7 +15,6 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   color: $body-color;
-  background: $background;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -127,7 +126,7 @@ img {
 // Links
 a {
     text-decoration: none;
-    color: $link-color;
+    color: #2c3035d1;
     transition: $global-transition;
 
     &:hover {

@@ -1,24 +1,24 @@
 #-------------------------------
 # General Site Settings
 
-title: Galada Theme | Theme for Jekyll
-description: Galada is an easy and simple theme for Jekyll. Dark colors, give it a special exquisite look. A careful approach to design and features make it an ideal solution for a personal blog. # this means to ignore newlines until "baseurl:"
-baseurl: "/galada" # the subpath of your site, e.g. /blog
+title: Defensores de la Fe.
+description: Santificad a Dios el Señor en vuestros corazones, y estad siempre preparados para presentar defensa con mansedumbre y reverencia ante todo el que os demande razón de la esperanza que hay en vosotros." (1 Pedro 3:15). # this means to ignore newlines until "baseurl:"
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 #-------------------------------
 # About Section
-author-name:   Natali Anderson
-author-avatar: 09.jpg
+author-name: G. Jorge Medina
+author-avatar: logo.jpg
 
 
 #-------------------------------
 # Contact links
-facebook:  https://facebook.com/ # Add your Facebook handle
-twitter:   https://twitter.com/ # Add your Facebook handle
-instagram: https://www.instagram.com/ # Add your Facebook handle
-pinterest: https://www.pinterest.com/ # Add your Facebook handle
+facebook:  https://facebook.com/defensoresdelafe # Add your Facebook handle
+twitter:   https://twitter.com/defensoresweb # Add your Facebook handle
+instagram: https://www.instagram.com/defendersofthefaith # Add your Facebook handle
+youtube:   https://www.youtube.com/defensoresdelafe # Add your Facebook handle
 
 
 #-------------------------------
@@ -28,7 +28,10 @@ disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example
 
 #-------------------------------
 # Instagram Feed
-instafeed: true # To enable the instafeed, use the value true. To turn off use the value false.
+instafeed: false # To enable the instafeed, use the value true. To turn off use the value false.
+
+# Twitter Feed
+twitterfeed: true # To enable the twitterfeed, use the value true. To turn off use the value false.
 
 
 #-------------------------------
@@ -48,8 +51,9 @@ permalink: ':title/'
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-twitter-plugin
 
-paginate: 7
+paginate: 9
 paginate_path: "/page/:num"
 
 include:

@@ -24,35 +24,35 @@
   {% endif %}
 
   <div class="widget widget-social">
-    <h3 class="widget-title">Subscribe & Follow</h3>
+    <h3 class="widget-title">¡Síguenos en nuestras redes sociales!</h3>
     <ul class="social-profiles list-reset">
       {% if site.facebook %}
-      <li class="social-profiles-item">
+      <li class="social-profiles-item" id="facebook">
         <a href="{{ site.facebook }}" class="social-profiles-link"><i class="ion ion-logo-facebook"></i></a>
       </li>
       {% else %} {% endif %}
 
        {% if site.twitter %}
-      <li class="social-profiles-item">
+      <li class="social-profiles-item" id="twitter">
         <a href="{{ site.twitter }}" class="social-profiles-link"><i class="ion ion-logo-twitter"></i></a>
       </li>
       {% else %} {% endif %}
 
       {% if site.instagram %}
-      <li class="social-profiles-item">
+      <li class="social-profiles-item" id="instagram">
         <a href="{{ site.instagram }}" class="social-profiles-link"><i class="ion ion-logo-instagram"></i></a>
       </li>
       {% else %} {% endif %}
 
-      {% if site.pinterest %}
-      <li class="social-profiles-item">
-        <a href="{{ site.pinterest }}" class="social-profiles-link"><i class="ion ion-logo-pinterest"></i></a>
+      {% if site.youtube %}
+      <li class="social-profiles-item" id="youtube">
+        <a href="{{ site.youtube }}" class="social-profiles-link"><i class="ion ion-logo-youtube"></i></a>
       </li>
       {% else %} {% endif %}
     </ul>
   </div>
 
-  <div class="widget widget-newsletter">
+  <!--div class="widget widget-newsletter">
     <h3 class="widget-title">Newsletter</h3>
     <div class="newsletter-subtitle">Get Interesting News</div>
     <div class="newsletter-text">Receive the latest news via email.</div>
@@ -67,8 +67,7 @@
         <input class="newsletter-button" id="mc-embedded-subscribe" type="submit" name="subscribe" value="Subscribe">
       </div>
     </form>
-  </div>
-
+  </div--->
   {% if site.instafeed == true %}
   <div class="widget widget-instagram">
     <h3 class="widget-title">Instagram</h3>
@@ -80,7 +79,7 @@
   {% endif %}
 
   <div class="widget widget-tags">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">Tags</h3>
     {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{%
     endcapture %} {% assign tag_words = site_tags | split:',' | sort %}
     <ul class="tag-list list-reset">
@@ -91,5 +90,14 @@
     {% endfor %}
     </ul>
   </div>
+
+  {% if site.twitterfeed == true %}
+  <div class="widget widget-instagram">
+    <h3 class="widget-title">Twitter</h3>
+    <div class="instagram-box">
+      {% twitter https://twitter.com/defensoresweb maxwidth=500 limit=5 %}
+    </div>
+  </div>
+  {% endif %}
   
 </aside> <!-- /.sidebar -->

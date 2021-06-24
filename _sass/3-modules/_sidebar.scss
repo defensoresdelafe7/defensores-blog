@@ -5,7 +5,6 @@
 .widget {
   padding: 40px 15px;
   margin-bottom: 30px;
-  background: rgba($blue-darken, .95);
   box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25);
   .widget-title {
     position: relative;
@@ -109,23 +108,36 @@
   text-align: center;
   .social-profiles-item {
     display: inline-block;
-    margin: 3px;
+    margin: 8px;
+    border-radius: 5px;
+    &:hover {
+      filter: drop-shadow(1px 2px 2px gray);
+    }
   }
   .social-profiles-link {
     display: inline-block;
     line-height: 16px;
     padding: 8px 10px;
-    border: 1px solid $border-color;
-    border-radius: $global-radius;
-    color: $border-color;
-    &:hover {
-      border-color: $primary-color;
-      color: $primary-color;
-    }
+    color: $white;
     i {
       font-size: 18px;
     }
   }
+}
+li#facebook{
+  background-color: royalblue;
+}
+
+li#youtube{
+  background-color: red;
+}
+
+li#instagram{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+li#twitter{
+  background-color: dodgerblue;
 }
 
 // Instagram Widget
@@ -202,6 +214,7 @@
     outline: none;
   }
   .newsletter-email {
+    border: 1px solid #1bbc9b !important;
     padding: 15px 15px 15px 33px;
   }
   .newsletter-button {
@@ -223,6 +236,8 @@
   .tag-item {
     display: inline-block;
     margin: 3px;
+    border: 1px solid #ccd6dd;
+    border-radius: 5px;
     &:last-child {
       margin-right: 0;
     }
@@ -231,8 +246,7 @@
       padding: 5px 15px;
       font-size: 12px;
       border-radius: $global-radius;
-      color: $text;
-      background: $blue-black;
+      color: $black;
       &:hover {
         color: $white;
         background: $primary-color;

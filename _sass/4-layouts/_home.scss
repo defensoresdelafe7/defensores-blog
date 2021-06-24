@@ -1,7 +1,7 @@
 // Header
 .header {
   margin-bottom: 50px;
-  background: $black;
+  background: #2c2f36;
 }
 
 .header, .header-box {
@@ -20,9 +20,9 @@
       line-height: 16px;
       text-transform: uppercase;
       letter-spacing: 5px;
-      color: $text;
+      color: $white;
       &:hover {
-        color: #fff;
+        color: $primary-color;
       }
     }
   }
@@ -63,7 +63,7 @@
     font-size: 30px;
     font-weight: 700;
     line-height: 60px;
-    color: $text;
+    color: $white;
     &:before {
       content: '';
       position: absolute;
@@ -78,6 +78,7 @@
       transition: transform 0.35s cubic-bezier(0.8, 0, 0.2, 1);
     }
     &:hover {
+      color: $primary-color;
       &:before {
       transform: scale3d(1, 1, 1);
       transform-origin: 0 50%;
@@ -126,7 +127,7 @@
     margin-left: 10px;
     font-size: 20px;
     vertical-align: middle;
-    color: $text;
+    color: $white;
     cursor: pointer;
     &:first-child {
       margin-left: 0;
@@ -173,7 +174,7 @@
       color: $white;
       white-space: normal;
       &:hover {
-        color: $gray-blue;
+        color:$primary-color;
       }
     }
   }
@@ -206,7 +207,7 @@
   }
   .article-content-first {
     padding: 20px;
-    color: $text;
+    color: $white;
     .article-tag {
       .tag {
         font-size: 12px;
@@ -224,7 +225,7 @@
       line-height: 30px;
       font-weight: normal;
       a {
-        color: $text;
+        color: white;
         transition: $global-transition;
       }
     }
@@ -238,7 +239,7 @@
       font-size: 14px;
       font-weight: 700;
       border: 1px solid rgba(201, 211, 231, 50);
-      color: $text;
+      color: $white;
       transition: $global-transition;
       &:hover {
         border: 1px solid $primary-color;
@@ -305,7 +306,7 @@
       font-size: 110px;
       text-align: center;
       letter-spacing: 2px;
-      color: $text;
+      color: $white;
       transform: translate(-50%,-50%);
       transition: all 0.4s ease 0.3s;
       opacity: 0;
@@ -330,10 +331,9 @@
           font-size: 12px;
           line-height: 18px;
           font-weight: bold;
-          border: 1px solid $primary-color;
+          border: 1px solid #998;
           border-radius: $global-radius;
           text-transform: capitalize;
-          color: $primary-color;
           transition: $global-transition;
           &:last-child {
             margin-right: 0;
@@ -349,7 +349,6 @@
       margin-bottom: 5px;
       a {
         font-size: 24px;
-        color: $text;
       }
     }
     .article-excerpt {

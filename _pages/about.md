@@ -1,7 +1,6 @@
 ---
-layout: page
-title: About
-image: 08.jpg
+layout: clean-page
+title: Acerca de
 permalink: /about/
 ---
 
